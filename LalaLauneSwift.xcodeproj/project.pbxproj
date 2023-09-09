@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3EDA3B02AAB829900B69691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3AF2AAB829900B69691 /* AppDelegate.swift */; };
+		E3EDA3B22AAB829900B69691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3B12AAB829900B69691 /* SceneDelegate.swift */; };
+		E3EDA3B42AAB829900B69691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3B32AAB829900B69691 /* ViewController.swift */; };
+		E3EDA3B72AAB829900B69691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA3B52AAB829900B69691 /* Main.storyboard */; };
+		E3EDA3B92AAB82A300B69691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA3B82AAB82A300B69691 /* Assets.xcassets */; };
+		E3EDA3BC2AAB82A300B69691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA3BA2AAB82A300B69691 /* LaunchScreen.storyboard */; };
+		E3EDA3C72AAB82A400B69691 /* LalaLauneSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */; };
+		E3EDA3D12AAB82A400B69691 /* LalaLauneSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3D02AAB82A400B69691 /* LalaLauneSwiftUITests.swift */; };
+		E3EDA3D32AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3D22AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3EDA3C32AAB82A400B69691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3EDA3A42AAB829900B69691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3EDA3AB2AAB829900B69691;
+			remoteInfo = LalaLauneSwift;
+		};
+		E3EDA3CD2AAB82A400B69691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3EDA3A42AAB829900B69691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3EDA3AB2AAB829900B69691;
+			remoteInfo = LalaLauneSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3EDA3AC2AAB829900B69691 /* LalaLauneSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LalaLauneSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3EDA3AF2AAB829900B69691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3EDA3B12AAB829900B69691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3EDA3B32AAB829900B69691 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3EDA3B62AAB829900B69691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3EDA3B82AAB82A300B69691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3EDA3BB2AAB82A300B69691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3EDA3BD2AAB82A300B69691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3EDA3C22AAB82A400B69691 /* LalaLauneSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LalaLauneSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftTests.swift; sourceTree = "<group>"; };
+		E3EDA3CC2AAB82A400B69691 /* LalaLauneSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LalaLauneSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3EDA3D02AAB82A400B69691 /* LalaLauneSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftUITests.swift; sourceTree = "<group>"; };
+		E3EDA3D22AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3EDA3A92AAB829900B69691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3EDA3BF2AAB82A400B69691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3EDA3C92AAB82A400B69691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3EDA3A32AAB829900B69691 = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3AE2AAB829900B69691 /* LalaLauneSwift */,
+				E3EDA3C52AAB82A400B69691 /* LalaLauneSwiftTests */,
+				E3EDA3CF2AAB82A400B69691 /* LalaLauneSwiftUITests */,
+				E3EDA3AD2AAB829900B69691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3EDA3AD2AAB829900B69691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3AC2AAB829900B69691 /* LalaLauneSwift.app */,
+				E3EDA3C22AAB82A400B69691 /* LalaLauneSwiftTests.xctest */,
+				E3EDA3CC2AAB82A400B69691 /* LalaLauneSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3EDA3AE2AAB829900B69691 /* LalaLauneSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3DF2AAB85C000B69691 /* Features */,
+				E3EDA3AF2AAB829900B69691 /* AppDelegate.swift */,
+				E3EDA3B12AAB829900B69691 /* SceneDelegate.swift */,
+				E3EDA3B32AAB829900B69691 /* ViewController.swift */,
+				E3EDA3B52AAB829900B69691 /* Main.storyboard */,
+				E3EDA3B82AAB82A300B69691 /* Assets.xcassets */,
+				E3EDA3BA2AAB82A300B69691 /* LaunchScreen.storyboard */,
+				E3EDA3BD2AAB82A300B69691 /* Info.plist */,
+			);
+			path = LalaLauneSwift;
+			sourceTree = "<group>";
+		};
+		E3EDA3C52AAB82A400B69691 /* LalaLauneSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */,
+			);
+			path = LalaLauneSwiftTests;
+			sourceTree = "<group>";
+		};
+		E3EDA3CF2AAB82A400B69691 /* LalaLauneSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3D02AAB82A400B69691 /* LalaLauneSwiftUITests.swift */,
+				E3EDA3D22AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift */,
+			);
+			path = LalaLauneSwiftUITests;
+			sourceTree = "<group>";
+		};
+		E3EDA3DF2AAB85C000B69691 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3E22AAB85EB00B69691 /* WriteNote */,
+				E3EDA3E12AAB85DB00B69691 /* Notes */,
+				E3EDA3E02AAB85D000B69691 /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E3EDA3E02AAB85D000B69691 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E3EDA3E12AAB85DB00B69691 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		E3EDA3E22AAB85EB00B69691 /* WriteNote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WriteNote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3EDA3AB2AAB829900B69691 /* LalaLauneSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3EDA3D62AAB82A400B69691 /* Build configuration list for PBXNativeTarget "LalaLauneSwift" */;
+			buildPhases = (
+				E3EDA3A82AAB829900B69691 /* Sources */,
+				E3EDA3A92AAB829900B69691 /* Frameworks */,
+				E3EDA3AA2AAB829900B69691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LalaLauneSwift;
+			productName = LalaLauneSwift;
+			productReference = E3EDA3AC2AAB829900B69691 /* LalaLauneSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3EDA3C12AAB82A400B69691 /* LalaLauneSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3EDA3D92AAB82A400B69691 /* Build configuration list for PBXNativeTarget "LalaLauneSwiftTests" */;
+			buildPhases = (
+				E3EDA3BE2AAB82A400B69691 /* Sources */,
+				E3EDA3BF2AAB82A400B69691 /* Frameworks */,
+				E3EDA3C02AAB82A400B69691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3EDA3C42AAB82A400B69691 /* PBXTargetDependency */,
+			);
+			name = LalaLauneSwiftTests;
+			productName = LalaLauneSwiftTests;
+			productReference = E3EDA3C22AAB82A400B69691 /* LalaLauneSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3EDA3CB2AAB82A400B69691 /* LalaLauneSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3EDA3DC2AAB82A400B69691 /* Build configuration list for PBXNativeTarget "LalaLauneSwiftUITests" */;
+			buildPhases = (
+				E3EDA3C82AAB82A400B69691 /* Sources */,
+				E3EDA3C92AAB82A400B69691 /* Frameworks */,
+				E3EDA3CA2AAB82A400B69691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3EDA3CE2AAB82A400B69691 /* PBXTargetDependency */,
+			);
+			name = LalaLauneSwiftUITests;
+			productName = LalaLauneSwiftUITests;
+			productReference = E3EDA3CC2AAB82A400B69691 /* LalaLauneSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3EDA3A42AAB829900B69691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E3EDA3AB2AAB829900B69691 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E3EDA3C12AAB82A400B69691 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E3EDA3AB2AAB829900B69691;
+					};
+					E3EDA3CB2AAB82A400B69691 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E3EDA3AB2AAB829900B69691;
+					};
+				};
+			};
+			buildConfigurationList = E3EDA3A72AAB829900B69691 /* Build configuration list for PBXProject "LalaLauneSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3EDA3A32AAB829900B69691;
+			productRefGroup = E3EDA3AD2AAB829900B69691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3EDA3AB2AAB829900B69691 /* LalaLauneSwift */,
+				E3EDA3C12AAB82A400B69691 /* LalaLauneSwiftTests */,
+				E3EDA3CB2AAB82A400B69691 /* LalaLauneSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3EDA3AA2AAB829900B69691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EDA3BC2AAB82A300B69691 /* LaunchScreen.storyboard in Resources */,
+				E3EDA3B92AAB82A300B69691 /* Assets.xcassets in Resources */,
+				E3EDA3B72AAB829900B69691 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3EDA3C02AAB82A400B69691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3EDA3CA2AAB82A400B69691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3EDA3A82AAB829900B69691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EDA3B42AAB829900B69691 /* ViewController.swift in Sources */,
+				E3EDA3B02AAB829900B69691 /* AppDelegate.swift in Sources */,
+				E3EDA3B22AAB829900B69691 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3EDA3BE2AAB82A400B69691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EDA3C72AAB82A400B69691 /* LalaLauneSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3EDA3C82AAB82A400B69691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EDA3D32AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift in Sources */,
+				E3EDA3D12AAB82A400B69691 /* LalaLauneSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3EDA3C42AAB82A400B69691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3EDA3AB2AAB829900B69691 /* LalaLauneSwift */;
+			targetProxy = E3EDA3C32AAB82A400B69691 /* PBXContainerItemProxy */;
+		};
+		E3EDA3CE2AAB82A400B69691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3EDA3AB2AAB829900B69691 /* LalaLauneSwift */;
+			targetProxy = E3EDA3CD2AAB82A400B69691 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3EDA3B52AAB829900B69691 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3EDA3B62AAB829900B69691 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3EDA3BA2AAB82A300B69691 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3EDA3BB2AAB82A300B69691 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3EDA3D42AAB82A400B69691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3EDA3D52AAB82A400B69691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3EDA3D72AAB82A400B69691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCHGJTKAM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LalaLauneSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tasaquino.LalaLauneSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3EDA3D82AAB82A400B69691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCHGJTKAM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LalaLauneSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tasaquino.LalaLauneSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3EDA3DA2AAB82A400B69691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCHGJTKAM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tasaquino.LalaLauneSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LalaLauneSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LalaLauneSwift";
+			};
+			name = Debug;
+		};
+		E3EDA3DB2AAB82A400B69691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCHGJTKAM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tasaquino.LalaLauneSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LalaLauneSwift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LalaLauneSwift";
+			};
+			name = Release;
+		};
+		E3EDA3DD2AAB82A400B69691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCHGJTKAM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tasaquino.LalaLauneSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LalaLauneSwift;
+			};
+			name = Debug;
+		};
+		E3EDA3DE2AAB82A400B69691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MCHGJTKAM5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tasaquino.LalaLauneSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LalaLauneSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3EDA3A72AAB829900B69691 /* Build configuration list for PBXProject "LalaLauneSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3EDA3D42AAB82A400B69691 /* Debug */,
+				E3EDA3D52AAB82A400B69691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3EDA3D62AAB82A400B69691 /* Build configuration list for PBXNativeTarget "LalaLauneSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3EDA3D72AAB82A400B69691 /* Debug */,
+				E3EDA3D82AAB82A400B69691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3EDA3D92AAB82A400B69691 /* Build configuration list for PBXNativeTarget "LalaLauneSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3EDA3DA2AAB82A400B69691 /* Debug */,
+				E3EDA3DB2AAB82A400B69691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3EDA3DC2AAB82A400B69691 /* Build configuration list for PBXNativeTarget "LalaLauneSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3EDA3DD2AAB82A400B69691 /* Debug */,
+				E3EDA3DE2AAB82A400B69691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3EDA3A42AAB829900B69691 /* Project object */;
+}
