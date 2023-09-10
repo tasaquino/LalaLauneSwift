@@ -16,6 +16,13 @@
 		E3EDA3C72AAB82A400B69691 /* LalaLauneSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */; };
 		E3EDA3D12AAB82A400B69691 /* LalaLauneSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3D02AAB82A400B69691 /* LalaLauneSwiftUITests.swift */; };
 		E3EDA3D32AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3D22AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift */; };
+		E3EDA3E42AADFE9000B69691 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3E32AADFE9000B69691 /* LoginUseCase.swift */; };
+		E3EDA3E62AADFED300B69691 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3E52AADFED300B69691 /* LoginPresenter.swift */; };
+		E3EDA3E82AADFF5100B69691 /* LocalLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3E72AADFF5100B69691 /* LocalLoginTracker.swift */; };
+		E3EDA3EA2AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3E92AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift */; };
+		E3EDA3EC2AAE028000B69691 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3EB2AAE028000B69691 /* LoginUseCaseOutputComposer.swift */; };
+		E3EDA3EE2AAE067400B69691 /* LoginUseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3ED2AAE067400B69691 /* LoginUseCaseFactoryTests.swift */; };
+		E3EDA3F02AAE06E300B69691 /* LoginUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3EF2AAE06E300B69691 /* LoginUseCaseFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		E3EDA3CC2AAB82A400B69691 /* LalaLauneSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LalaLauneSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EDA3D02AAB82A400B69691 /* LalaLauneSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftUITests.swift; sourceTree = "<group>"; };
 		E3EDA3D22AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3EDA3E32AADFE9000B69691 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		E3EDA3E52AADFED300B69691 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E3EDA3E72AADFF5100B69691 /* LocalLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLoginTracker.swift; sourceTree = "<group>"; };
+		E3EDA3E92AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposerTests.swift; sourceTree = "<group>"; };
+		E3EDA3EB2AAE028000B69691 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
+		E3EDA3ED2AAE067400B69691 /* LoginUseCaseFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactoryTests.swift; sourceTree = "<group>"; };
+		E3EDA3EF2AAE06E300B69691 /* LoginUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */,
+				E3EDA3E92AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift */,
+				E3EDA3ED2AAE067400B69691 /* LoginUseCaseFactoryTests.swift */,
 			);
 			path = LalaLauneSwiftTests;
 			sourceTree = "<group>";
@@ -141,6 +157,10 @@
 		E3EDA3E02AAB85D000B69691 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				E3EDA3F12AAE0A9100B69691 /* Business Logic */,
+				E3EDA3F22AAE0AF500B69691 /* Presenter */,
+				E3EDA3F32AAE0B0A00B69691 /* Analytics */,
+				E3EDA3F42AAE0B1F00B69691 /* Main */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -157,6 +177,39 @@
 			children = (
 			);
 			path = WriteNote;
+			sourceTree = "<group>";
+		};
+		E3EDA3F12AAE0A9100B69691 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3E32AADFE9000B69691 /* LoginUseCase.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		E3EDA3F22AAE0AF500B69691 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3E52AADFED300B69691 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E3EDA3F32AAE0B0A00B69691 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3E72AADFF5100B69691 /* LocalLoginTracker.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		E3EDA3F42AAE0B1F00B69691 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3EB2AAE028000B69691 /* LoginUseCaseOutputComposer.swift */,
+				E3EDA3EF2AAE06E300B69691 /* LoginUseCaseFactory.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +344,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EDA3B42AAB829900B69691 /* ViewController.swift in Sources */,
+				E3EDA3EC2AAE028000B69691 /* LoginUseCaseOutputComposer.swift in Sources */,
 				E3EDA3B02AAB829900B69691 /* AppDelegate.swift in Sources */,
+				E3EDA3E82AADFF5100B69691 /* LocalLoginTracker.swift in Sources */,
 				E3EDA3B22AAB829900B69691 /* SceneDelegate.swift in Sources */,
+				E3EDA3E42AADFE9000B69691 /* LoginUseCase.swift in Sources */,
+				E3EDA3F02AAE06E300B69691 /* LoginUseCaseFactory.swift in Sources */,
+				E3EDA3E62AADFED300B69691 /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EDA3EE2AAE067400B69691 /* LoginUseCaseFactoryTests.swift in Sources */,
+				E3EDA3EA2AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift in Sources */,
 				E3EDA3C72AAB82A400B69691 /* LalaLauneSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
