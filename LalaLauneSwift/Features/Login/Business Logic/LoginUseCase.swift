@@ -22,15 +22,18 @@ protocol LoginUseCaseOutput {
 
 class LoginUseCase {
     let output: LoginUseCaseOutput
+    var loginService: LoginService?
     
-    init(output: LoginUseCaseOutput) {
+    init(output: LoginUseCaseOutput, service: LoginService) {
         self.output = output
+        self.loginService = service
     }
     
-    func login(name: String, password: String) {
-        // if success
-        // output.loginSucceeded()
-        // else
-        // output.loginFailed()
+    func login() {
+        if (loginService?.login() == true) {
+            output.loginSucceeded()
+        } else {
+            output.loginFailed()
+        }
     }
 }

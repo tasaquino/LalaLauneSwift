@@ -11,7 +11,8 @@ import XCTest
 final class LoginUseCaseFactoryTests: XCTestCase {
     func test() {
         let sut = LoginUseCaseFactory()
-        let useCase = sut.makeUseCase()
+        let loginView = LoginViewSpy()
+        let useCase = sut.makeUseCaseWith(loginPresenter: LoginPresenter(loginViewDelegate: loginView))
         let composer = useCase.output as? LoginUseCaseOutputComposer
         
         XCTAssertTrue((composer != nil))
@@ -26,5 +27,17 @@ private extension LoginUseCaseOutputComposer {
         return outputs.filter { output in
             return output is T
         }.count
+    }
+}
+
+final class LoginViewSpy: LoginViewDelegate {
+    var navigateToHomeScreenCount = 0
+    var showErrorMessageCount = 0
+    func navigateToHomeScreen() {
+        navigateToHomeScreenCount += 1
+    }
+    
+    func showErrorMessage(error: String) {
+        showErrorMessageCount += 1
     }
 }

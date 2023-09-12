@@ -10,9 +10,11 @@ import Foundation
 final class LocalLoginTracker: LoginUseCaseOutput {
     func loginSucceeded() {
         // send event login succeeded
+        debugPrint("Event-> loginSucceeded")
     }
     
     func loginFailed() {
         // send event login failed
+        debugPrint("Event-> loginFailed")
     }
 }
