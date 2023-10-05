@@ -11,13 +11,14 @@
 		E3791CDB2AB1008600F253B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3791CDA2AB1008600F253B9 /* LoginView.swift */; };
 		E3791CDE2AB104F000F253B9 /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3791CDD2AB104F000F253B9 /* SupabaseService.swift */; };
 		E3791CE02AB10BCA00F253B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3791CDF2AB10BCA00F253B9 /* SceneDelegate.swift */; };
+		E3AA38C02ACEE97800685710 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38BF2ACEE97800685710 /* Secrets.swift */; };
+		E3AA38C22ACEECA200685710 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38C12ACEECA200685710 /* LoginError.swift */; };
 		E3E863F22AAFAB800076CE55 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E863F12AAFAB800076CE55 /* LoginService.swift */; };
 		E3EDA3B02AAB829900B69691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3AF2AAB829900B69691 /* AppDelegate.swift */; };
 		E3EDA3B42AAB829900B69691 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3B32AAB829900B69691 /* ViewController.swift */; };
 		E3EDA3B72AAB829900B69691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA3B52AAB829900B69691 /* Main.storyboard */; };
 		E3EDA3B92AAB82A300B69691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA3B82AAB82A300B69691 /* Assets.xcassets */; };
 		E3EDA3BC2AAB82A300B69691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA3BA2AAB82A300B69691 /* LaunchScreen.storyboard */; };
-		E3EDA3C72AAB82A400B69691 /* LalaLauneSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */; };
 		E3EDA3D12AAB82A400B69691 /* LalaLauneSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3D02AAB82A400B69691 /* LalaLauneSwiftUITests.swift */; };
 		E3EDA3D32AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3D22AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift */; };
 		E3EDA3E42AADFE9000B69691 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3E32AADFE9000B69691 /* LoginUseCase.swift */; };
@@ -27,6 +28,8 @@
 		E3EDA3EC2AAE028000B69691 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3EB2AAE028000B69691 /* LoginUseCaseOutputComposer.swift */; };
 		E3EDA3EE2AAE067400B69691 /* LoginUseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3ED2AAE067400B69691 /* LoginUseCaseFactoryTests.swift */; };
 		E3EDA3F02AAE06E300B69691 /* LoginUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3EF2AAE06E300B69691 /* LoginUseCaseFactory.swift */; };
+		E3FD7DFE2ACEC30C00A72110 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = E3FD7DFD2ACEC30C00A72110 /* Supabase */; };
+		E3FD7E042ACEC9C500A72110 /* LoginUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FD7E032ACEC9C500A72110 /* LoginUseCaseTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		E3791CDA2AB1008600F253B9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E3791CDD2AB104F000F253B9 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
 		E3791CDF2AB10BCA00F253B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3AA38BF2ACEE97800685710 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		E3AA38C12ACEECA200685710 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		E3E863F12AAFAB800076CE55 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		E3EDA3AC2AAB829900B69691 /* LalaLauneSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LalaLauneSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EDA3AF2AAB829900B69691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		E3EDA3BB2AAB82A300B69691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3EDA3BD2AAB82A300B69691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3EDA3C22AAB82A400B69691 /* LalaLauneSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LalaLauneSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftTests.swift; sourceTree = "<group>"; };
 		E3EDA3CC2AAB82A400B69691 /* LalaLauneSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LalaLauneSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EDA3D02AAB82A400B69691 /* LalaLauneSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftUITests.swift; sourceTree = "<group>"; };
 		E3EDA3D22AAB82A400B69691 /* LalaLauneSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LalaLauneSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 		E3EDA3EB2AAE028000B69691 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
 		E3EDA3ED2AAE067400B69691 /* LoginUseCaseFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactoryTests.swift; sourceTree = "<group>"; };
 		E3EDA3EF2AAE06E300B69691 /* LoginUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactory.swift; sourceTree = "<group>"; };
+		E3FD7E032ACEC9C500A72110 /* LoginUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3FD7DFE2ACEC30C00A72110 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +109,7 @@
 			children = (
 				E3E863F12AAFAB800076CE55 /* LoginService.swift */,
 				E3791CDD2AB104F000F253B9 /* SupabaseService.swift */,
+				E3AA38C12ACEECA200685710 /* LoginError.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 				E3EDA3B82AAB82A300B69691 /* Assets.xcassets */,
 				E3EDA3BA2AAB82A300B69691 /* LaunchScreen.storyboard */,
 				E3EDA3BD2AAB82A300B69691 /* Info.plist */,
+				E3AA38BF2ACEE97800685710 /* Secrets.swift */,
 			);
 			path = LalaLauneSwift;
 			sourceTree = "<group>";
@@ -153,9 +161,8 @@
 		E3EDA3C52AAB82A400B69691 /* LalaLauneSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				E3EDA3C62AAB82A400B69691 /* LalaLauneSwiftTests.swift */,
-				E3EDA3E92AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift */,
-				E3EDA3ED2AAE067400B69691 /* LoginUseCaseFactoryTests.swift */,
+				E3FD7E002ACEC45300A72110 /* Business Logic */,
+				E3FD7DFF2ACEC41F00A72110 /* Main */,
 			);
 			path = LalaLauneSwiftTests;
 			sourceTree = "<group>";
@@ -240,6 +247,23 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		E3FD7DFF2ACEC41F00A72110 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E3EDA3E92AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift */,
+				E3EDA3ED2AAE067400B69691 /* LoginUseCaseFactoryTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E3FD7E002ACEC45300A72110 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E3FD7E032ACEC9C500A72110 /* LoginUseCaseTest.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +280,9 @@
 			dependencies = (
 			);
 			name = LalaLauneSwift;
+			packageProductDependencies = (
+				E3FD7DFD2ACEC30C00A72110 /* Supabase */,
+			);
 			productName = LalaLauneSwift;
 			productReference = E3EDA3AC2AAB829900B69691 /* LalaLauneSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -328,6 +355,9 @@
 				Base,
 			);
 			mainGroup = E3EDA3A32AAB829900B69691;
+			packageReferences = (
+				E3FD7DFC2ACEC30C00A72110 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = E3EDA3AD2AAB829900B69691 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,11 +407,13 @@
 				E3EDA3B02AAB829900B69691 /* AppDelegate.swift in Sources */,
 				E3EDA3E82AADFF5100B69691 /* LocalLoginTracker.swift in Sources */,
 				E3EDA3E42AADFE9000B69691 /* LoginUseCase.swift in Sources */,
+				E3AA38C22ACEECA200685710 /* LoginError.swift in Sources */,
 				E3EDA3F02AAE06E300B69691 /* LoginUseCaseFactory.swift in Sources */,
 				E3EDA3E62AADFED300B69691 /* LoginPresenter.swift in Sources */,
 				E3791CDB2AB1008600F253B9 /* LoginView.swift in Sources */,
 				E363BE562AB0F9210023D7C1 /* LoginViewController.swift in Sources */,
 				E3E863F22AAFAB800076CE55 /* LoginService.swift in Sources */,
+				E3AA38C02ACEE97800685710 /* Secrets.swift in Sources */,
 				E3791CE02AB10BCA00F253B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,8 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EDA3EE2AAE067400B69691 /* LoginUseCaseFactoryTests.swift in Sources */,
+				E3FD7E042ACEC9C500A72110 /* LoginUseCaseTest.swift in Sources */,
 				E3EDA3EA2AAE023300B69691 /* LoginUseCaseOutputComposerTests.swift in Sources */,
-				E3EDA3C72AAB82A400B69691 /* LalaLauneSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +758,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3FD7DFC2ACEC30C00A72110 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3FD7DFD2ACEC30C00A72110 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3FD7DFC2ACEC30C00A72110 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3EDA3A42AAB829900B69691 /* Project object */;
 }

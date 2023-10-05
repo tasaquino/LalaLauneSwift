@@ -10,4 +10,7 @@ import Foundation
 protocol LoginViewDelegate : AnyObject {
     func navigateToHomeScreen()
     func showErrorMessage(error: String)
+    func getEmail() -> String
+    func getPassword() -> String
+    func validateFields() -> Bool
 }

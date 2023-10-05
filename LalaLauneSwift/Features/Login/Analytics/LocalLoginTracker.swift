@@ -13,7 +13,7 @@ final class LocalLoginTracker: LoginUseCaseOutput {
         debugPrint("Event-> loginSucceeded")
     }
     
-    func loginFailed() {
+    func loginFailed(error: LoginError?) {
         // send event login failed
         debugPrint("Event-> loginFailed")
     }

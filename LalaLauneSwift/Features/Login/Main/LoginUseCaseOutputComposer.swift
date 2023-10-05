@@ -8,6 +8,7 @@
 import Foundation
 
 final class LoginUseCaseOutputComposer: LoginUseCaseOutput {
+   
     let outputs: [LoginUseCaseOutput]
     
     init(_ outputs: [LoginUseCaseOutput]) {
@@ -18,8 +19,8 @@ final class LoginUseCaseOutputComposer: LoginUseCaseOutput {
         outputs.forEach({ $0.loginSucceeded() })
     }
     
-    func loginFailed() {
-        outputs.forEach({ $0.loginFailed() })
+    func loginFailed(error: LoginError?) {
+        outputs.forEach({ $0.loginFailed(error: error) })
     }
 }
 

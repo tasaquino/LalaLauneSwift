@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import Supabase
 
 final class LoginUseCaseFactory {
-    func makeService() -> LoginService {
-        return SupabaseService()
+    private func makeService() -> LoginService {
+        return SupabaseService(client: SupabaseClient(supabaseURL: URL(string: Secrets.supabaseUrl)!, supabaseKey: Secrets.supabaseApiKey))
     }
     func makeUseCaseWith(loginPresenter: LoginPresenter) -> LoginUseCase {
         let localTracker = LocalLoginTracker()

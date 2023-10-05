@@ -31,6 +31,18 @@ private extension LoginUseCaseOutputComposer {
 }
 
 final class LoginViewSpy: LoginViewDelegate {
+    func getEmail() -> String {
+        return "test@test.com"
+    }
+    
+    func getPassword() -> String {
+        return "123456"
+    }
+    
+    func validateFields() -> Bool {
+        true
+    }
+    
     var navigateToHomeScreenCount = 0
     var showErrorMessageCount = 0
     func navigateToHomeScreen() {

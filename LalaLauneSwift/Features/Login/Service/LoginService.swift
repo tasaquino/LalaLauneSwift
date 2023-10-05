@@ -8,5 +8,6 @@
 import Foundation
 
 protocol LoginService {
-    func login() -> Bool
+    func login(email: String, password: String) async -> (Bool, LoginError?)
+    func isLoggedIn() async -> Bool
 }

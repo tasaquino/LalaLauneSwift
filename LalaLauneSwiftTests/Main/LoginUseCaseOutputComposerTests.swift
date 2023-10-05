@@ -12,7 +12,7 @@ final class LoginUseCaseOutputComposeTests: XCTestCase {
     func test() {
         let sut = LoginUseCaseOutputComposer([])
         sut.loginSucceeded()
-        sut.loginFailed()
+        sut.loginFailed(error: nil)
     }
     
     func test_composingMultipleOutputs_delegatesSucceededMessage() {
@@ -34,7 +34,7 @@ final class LoginUseCaseOutputComposeTests: XCTestCase {
         let output2 = LoginUseCaseOutputSpy()
         let sut = LoginUseCaseOutputComposer([output1, output2])
         
-        sut.loginFailed()
+        sut.loginFailed(error: nil)
         
         XCTAssertEqual(output1.loginSucceedCallCount, 0)
         XCTAssertEqual(output1.loginFailedCallCount, 1)
@@ -53,7 +53,7 @@ final class LoginUseCaseOutputComposeTests: XCTestCase {
             loginSucceedCallCount += 1
         }
         
-        func loginFailed() {
+        func loginFailed(error: LalaLauneSwift.LoginError?) {
             loginFailedCallCount += 1
         }
     }

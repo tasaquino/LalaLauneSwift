@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,38 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXQ-Lw-GcW">
-                                <rect key="frame" x="116" y="396" width="161" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login with Google"/>
-                                <connections>
-                                    <action selector="loginWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9Q-Ox-3xX"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to LalaLaune" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLn-qM-ZSo">
                                 <rect key="frame" x="81" y="330" width="244" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2n-Ew-aai">
+                                <rect key="frame" x="87" y="427" width="233" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vj2-yK-7kA">
+                                <rect key="frame" x="87" y="477" width="233" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXQ-Lw-GcW">
+                                <rect key="frame" x="116" y="583.66666666666663" width="161" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login with Google"/>
+                                <connections>
+                                    <action selector="loginWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9Q-Ox-3xX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yXQ-Lw-GcW" secondAttribute="bottom" constant="387" id="8tY-On-5GT"/>
+                            <constraint firstItem="Q2n-Ew-aai" firstAttribute="top" secondItem="BLn-qM-ZSo" secondAttribute="bottom" constant="67" id="4JY-9a-XB4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yXQ-Lw-GcW" secondAttribute="bottom" constant="200" id="8tY-On-5GT"/>
+                            <constraint firstItem="Q2n-Ew-aai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="AvK-OQ-zuI"/>
                             <constraint firstItem="BLn-qM-ZSo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="BZd-82-eIO"/>
                             <constraint firstItem="yXQ-Lw-GcW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="IJT-kT-Saq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BLn-qM-ZSo" secondAttribute="bottom" constant="458" id="PSl-ab-hrP"/>
+                            <constraint firstItem="vj2-yK-7kA" firstAttribute="top" secondItem="Q2n-Ew-aai" secondAttribute="bottom" constant="16" id="d4x-58-n6E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BLn-qM-ZSo" secondAttribute="trailing" constant="68" id="f9c-XX-dRF"/>
                             <constraint firstItem="BLn-qM-ZSo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="kqY-hA-hxZ"/>
+                            <constraint firstItem="vj2-yK-7kA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="lUS-7b-phs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yXQ-Lw-GcW" secondAttribute="trailing" constant="116" id="qAr-BN-UCB"/>
-                            <constraint firstItem="yXQ-Lw-GcW" firstAttribute="top" secondItem="BLn-qM-ZSo" secondAttribute="bottom" constant="36" id="qRF-Pb-ccy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vj2-yK-7kA" secondAttribute="trailing" constant="73" id="wcL-n3-vcb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q2n-Ew-aai" secondAttribute="trailing" constant="73" id="xjJ-9z-ITI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Q2n-Ew-aai" id="Bgs-eK-76S"/>
+                        <outlet property="passwordField" destination="vj2-yK-7kA" id="clR-mv-Vup"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-34"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>

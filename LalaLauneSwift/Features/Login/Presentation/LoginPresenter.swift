@@ -11,6 +11,14 @@ final class LoginPresenter: LoginUseCaseOutput {
     weak private var loginViewDelegate: LoginViewDelegate?
     private var useCase: LoginUseCase?
     
+    var inputEmail: String {
+        loginViewDelegate?.getEmail() ?? ""
+    }
+    
+    var inputPassword: String {
+        loginViewDelegate?.getPassword() ?? ""
+    }
+    
     init(loginViewDelegate: LoginViewDelegate){
         self.loginViewDelegate = loginViewDelegate
     }
@@ -20,14 +28,18 @@ final class LoginPresenter: LoginUseCaseOutput {
     }
     
     func login() {
-        useCase?.login()
+        Task {
+            if (loginViewDelegate?.validateFields() == true) {
+                await useCase?.login(email: inputEmail, password: inputPassword)
+            }
+        }
     }
     
     func loginSucceeded() {
         loginViewDelegate?.navigateToHomeScreen()
     }
     
-    func loginFailed() {
-        loginViewDelegate?.showErrorMessage(error: "Login failed, please try again")
+    func loginFailed(error: LoginError?) {
+        loginViewDelegate?.showErrorMessage(error: error?.message ?? "Login failed")
     }
 }
