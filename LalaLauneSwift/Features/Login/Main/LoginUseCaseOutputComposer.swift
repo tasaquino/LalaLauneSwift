@@ -23,10 +23,3 @@ final class LoginUseCaseOutputComposer: LoginUseCaseOutput {
         outputs.forEach({ $0.loginFailed(error: error) })
     }
 }
-
-// instead of creating a composable class, we could instead create a composable function
-//func compose<T>(_ outputs: [(T) -> Void]) -> (T) -> Void {
-//    return {
-//        value in outputs.forEach { $0(value) }
-//    }
-//}

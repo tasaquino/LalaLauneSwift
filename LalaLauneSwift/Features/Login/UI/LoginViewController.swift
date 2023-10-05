@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController : UIViewController, LoginViewDelegate {
 
-    var presenter: LoginPresenter?
+    weak var presenter: LoginPresenter?
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -23,7 +23,9 @@ class LoginViewController : UIViewController, LoginViewDelegate {
     }
     
     @IBAction func loginWithGoogle(_ sender: UIButton) {
-        presenter?.login()
+        Task {
+            await presenter?.login()
+        }
     }
     
     func navigateToHomeScreen() {

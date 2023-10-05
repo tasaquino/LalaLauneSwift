@@ -27,11 +27,9 @@ final class LoginPresenter: LoginUseCaseOutput {
         self.useCase = useCase
     }
     
-    func login() {
-        Task {
-            if (loginViewDelegate?.validateFields() == true) {
-                await useCase?.login(email: inputEmail, password: inputPassword)
-            }
+    func login() async {
+        if (loginViewDelegate?.validateFields() == true) {
+            await useCase?.login(email: inputEmail, password: inputPassword)
         }
     }
     
