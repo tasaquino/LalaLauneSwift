@@ -12,27 +12,49 @@ class LoginViewController : UIViewController, LoginViewDelegate {
 
     weak var presenter: LoginPresenter?
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         let presenter = LoginPresenter(loginViewDelegate: self)
         let useCase = LoginUseCaseFactory().makeUseCaseWith(loginPresenter: presenter)
         presenter.setUseCase(useCase: useCase)
         self.presenter = presenter
+        checkExistentSession()
+        animateTitle()
     }
     
-    @IBAction func loginWithGoogle(_ sender: UIButton) {
+    func checkExistentSession() {
         Task {
-            await presenter?.login()
+            await presenter?.checkExistentSession()
         }
     }
     
-    func navigateToHomeScreen() {
-        let alert = UIAlertController(title: "Navigating to home...", message: "TBD", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
+    func animateTitle() {
+        titleLabel.text = ""
+        let title = Constants.appName
+        var charIndex = 0.0
+        for letter in title {
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { [weak self] timer in
+                self?.titleLabel.text?.append(letter)
+            }
+            charIndex += 1
+        }
+    }
+    
+    @IBAction func loginWithGoogle(_ sender: UIButton) {
+        let email = getEmail()
+        let password = getPassword()
+        Task {
+            await presenter?.login(email: email, password: password)
+        }
+    }
+    
+    func navigateToNotesScreen() {
         fromMainThread {
-            self.present(alert, animated: true)
+            self.performSegue(withIdentifier: Constants.loginToNotesSegue, sender: self)
         }
     }
     
@@ -52,21 +74,7 @@ class LoginViewController : UIViewController, LoginViewDelegate {
         }
     }
     
-    func validateFields() -> Bool {
-        if (getEmail().isEmpty) {
-            showErrorMessage(error: "Please input an e-mail")
-            return false
-        }
-        
-        if (getPassword().isEmpty) {
-            showErrorMessage(error: "Please input a password")
-            return false
-        }
-        
-        return true
-    }
-    
-    func getEmail() -> String {
+    func getEmail()  -> String {
         return emailField.text ?? ""
     }
     

@@ -16,12 +16,12 @@ final class LoginPresenterTest: XCTestCase {
         let useCase = LoginUseCase(output: sut, service: LoginServiceMock(shouldSimulateSuccess: true))
         sut.setUseCase(useCase: useCase)
         let task = Task {
-            await sut.login()
+            await sut.login(email: view.getEmail(), password: view.getPassword())
         }
         
         await task.value
         
-        XCTAssertEqual(view.navigateToHomeScreenCount, 1)
+        XCTAssertEqual(view.navigateToNotesScreenCount, 1)
         XCTAssertEqual(view.showErrorMessageCount, 0)
     }
     
@@ -31,12 +31,12 @@ final class LoginPresenterTest: XCTestCase {
         let useCase = LoginUseCase(output: sut, service: LoginServiceMock(shouldSimulateSuccess: false))
         sut.setUseCase(useCase: useCase)
         let task = Task {
-            await sut.login()
+            await sut.login(email: view.getEmail(), password: view.getPassword())
         }
         
         await task.value
         
-        XCTAssertEqual(view.navigateToHomeScreenCount, 0)
+        XCTAssertEqual(view.navigateToNotesScreenCount, 0)
         XCTAssertEqual(view.showErrorMessageCount, 1)
     }
 }

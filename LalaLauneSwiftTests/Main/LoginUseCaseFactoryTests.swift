@@ -43,10 +43,10 @@ final class LoginViewSpy: LoginViewDelegate {
         true
     }
     
-    var navigateToHomeScreenCount = 0
+    var navigateToNotesScreenCount = 0
     var showErrorMessageCount = 0
-    func navigateToHomeScreen() {
-        navigateToHomeScreenCount += 1
+    func navigateToNotesScreen() {
+        navigateToNotesScreenCount += 1
     }
     
     func showErrorMessage(error: String) {

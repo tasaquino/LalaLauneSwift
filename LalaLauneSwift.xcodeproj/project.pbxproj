@@ -14,6 +14,10 @@
 		E3AA38C02ACEE97800685710 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38BF2ACEE97800685710 /* Secrets.swift */; };
 		E3AA38C22ACEECA200685710 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38C12ACEECA200685710 /* LoginError.swift */; };
 		E3AA38C82ACEF76000685710 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38C72ACEF76000685710 /* LoginPresenterTest.swift */; };
+		E3AA38CA2AD4309B00685710 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38C92AD4309B00685710 /* NotesViewController.swift */; };
+		E3AA38CC2AD4328A00685710 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38CB2AD4328A00685710 /* Constants.swift */; };
+		E3AA38CF2AD4356F00685710 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38CE2AD4356F00685710 /* Note.swift */; };
+		E3AA38D22AD44E8B00685710 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AA38D12AD44E8B00685710 /* WriteViewController.swift */; };
 		E3E863F22AAFAB800076CE55 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E863F12AAFAB800076CE55 /* LoginService.swift */; };
 		E3EDA3B02AAB829900B69691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA3AF2AAB829900B69691 /* AppDelegate.swift */; };
 		E3EDA3B72AAB829900B69691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA3B52AAB829900B69691 /* Main.storyboard */; };
@@ -57,6 +61,10 @@
 		E3AA38BF2ACEE97800685710 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		E3AA38C12ACEECA200685710 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		E3AA38C72ACEF76000685710 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		E3AA38C92AD4309B00685710 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		E3AA38CB2AD4328A00685710 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E3AA38CE2AD4356F00685710 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		E3AA38D12AD44E8B00685710 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		E3E863F12AAFAB800076CE55 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		E3EDA3AC2AAB829900B69691 /* LalaLauneSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LalaLauneSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EDA3AF2AAB829900B69691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 		E3AA38C32ACEF39200685710 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA38C92AD4309B00685710 /* NotesViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -117,6 +126,22 @@
 				E3AA38C72ACEF76000685710 /* LoginPresenterTest.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E3AA38CD2AD4355100685710 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA38CE2AD4356F00685710 /* Note.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		E3AA38D02AD44E7600685710 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA38D12AD44E8B00685710 /* WriteViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		E3E863F02AAFAB600076CE55 /* Service */ = {
@@ -168,6 +193,7 @@
 				E3EDA3BA2AAB82A300B69691 /* LaunchScreen.storyboard */,
 				E3EDA3BD2AAB82A300B69691 /* Info.plist */,
 				E3AA38BF2ACEE97800685710 /* Secrets.swift */,
+				E3AA38CB2AD4328A00685710 /* Constants.swift */,
 			);
 			path = LalaLauneSwift;
 			sourceTree = "<group>";
@@ -217,6 +243,7 @@
 		E3EDA3E12AAB85DB00B69691 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA38CD2AD4355100685710 /* Business Logic */,
 				E3AA38C32ACEF39200685710 /* UI */,
 			);
 			path = Notes;
@@ -225,6 +252,7 @@
 		E3EDA3E22AAB85EB00B69691 /* WriteNote */ = {
 			isa = PBXGroup;
 			children = (
+				E3AA38D02AD44E7600685710 /* UI */,
 			);
 			path = WriteNote;
 			sourceTree = "<group>";
@@ -418,15 +446,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3791CDE2AB104F000F253B9 /* SupabaseService.swift in Sources */,
+				E3AA38D22AD44E8B00685710 /* WriteViewController.swift in Sources */,
 				E3EDA3EC2AAE028000B69691 /* LoginUseCaseOutputComposer.swift in Sources */,
 				E3EDA3B02AAB829900B69691 /* AppDelegate.swift in Sources */,
 				E3EDA3E82AADFF5100B69691 /* LocalLoginTracker.swift in Sources */,
 				E3EDA3E42AADFE9000B69691 /* LoginUseCase.swift in Sources */,
+				E3AA38CC2AD4328A00685710 /* Constants.swift in Sources */,
 				E3AA38C22ACEECA200685710 /* LoginError.swift in Sources */,
 				E3EDA3F02AAE06E300B69691 /* LoginUseCaseFactory.swift in Sources */,
 				E3EDA3E62AADFED300B69691 /* LoginPresenter.swift in Sources */,
 				E3791CDB2AB1008600F253B9 /* LoginView.swift in Sources */,
 				E363BE562AB0F9210023D7C1 /* LoginViewController.swift in Sources */,
+				E3AA38CF2AD4356F00685710 /* Note.swift in Sources */,
+				E3AA38CA2AD4309B00685710 /* NotesViewController.swift in Sources */,
 				E3E863F22AAFAB800076CE55 /* LoginService.swift in Sources */,
 				E3AA38C02ACEE97800685710 /* Secrets.swift in Sources */,
 				E3791CE02AB10BCA00F253B9 /* SceneDelegate.swift in Sources */,
